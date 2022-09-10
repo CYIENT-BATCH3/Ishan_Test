@@ -1,0 +1,42 @@
+student marks with switch case
+
+
+#include <stdio.h>
+
+int main() {
+   int a;
+   
+   printf("Enter the marks");
+   scanf("%d",&a);
+   
+   
+   switch(a)
+   {
+       case 75:
+       printf("Destinction ");
+       break;
+       
+       case 65:
+       printf("First class");
+       break;
+       
+       case 55:
+       printf("Second class");
+       break;
+       
+       case 45:
+       printf("Pass");
+       break;
+       
+       case 35:
+       printf("Fail");
+       break;
+       
+       
+       default:
+       puts("not in case");
+   }
+   
+   
+    return 0;
+}

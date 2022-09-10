@@ -1,0 +1,29 @@
+WAP user will give the VIN number and select the plant number.
+
+
+#include <stdio.h>
+
+int main() {
+   
+  
+   char b[17];
+   
+   printf("Enter the VIN no");
+   scanf("%s",&b);
+   
+   if(b[10]=='E'){
+       printf("plant is in Electronic city ");
+   }
+   else if(b[10]=='H'){
+       printf("plant is in Hydrabadd city");
+   }
+   else if(b[10]=='P'){
+       printf("plant is in Pune city");
+   }
+   
+   else
+   {
+       printf("Invalid data");
+   }
+    return 0;
+}

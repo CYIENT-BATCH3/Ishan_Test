@@ -1,0 +1,33 @@
+student marks using if else
+
+#include <stdio.h>
+
+
+int main() {
+    int marks;
+    // int b;
+    // int c;
+    
+    printf("Enter the marks");
+    scanf("%d",&marks);
+    
+    if(marks >=70 && marks <= 100){
+        printf("Destinction");
+    }
+    else if(marks >=60 && marks <=70){
+        printf("First class");
+    }
+    else if(marks >=50 && marks <=60){
+        printf("Second class");
+    }
+    else if(marks >=35 && marks <=40){
+        printf("Pass");
+    }
+    else{
+        printf("Fail");
+    }
+    
+return 0;
+        
+    }
+

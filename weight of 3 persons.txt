@@ -1,0 +1,17 @@
+weight of 3 persons who is heviest amoong them
+
+
+#include <stdio.h>
+
+int main() {
+   float w1;
+   float w2;
+   float w3;
+   
+   scanf("%f %f %f",&w1,&w2,&w3);
+   
+   ((w1>w2)&&(w1>w3))?printf("%f is heaviest than person2 and person3",w1):((w2>w1)&&(w2>w3))?printf("%f is heaviest than person 1 and 3",w2):printf("%f is heaviset than person 1 and person 2",w3);
+   
+  
+    return 0;
+}

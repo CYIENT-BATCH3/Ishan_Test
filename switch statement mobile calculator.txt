@@ -1,0 +1,44 @@
+using switch statement WAP for calculator
+
+#include <stdio.h>
+
+int main() {
+    float a,b,d;
+    char c;
+    
+    printf("Enter the value");
+    scanf("%f %f",&a,&b);
+    printf("Enter the operator(+,-,*/)");
+    scanf(" %c",&c);
+    
+    switch(c)
+    {
+        case '+' : 
+        d=a+b;
+        printf("Addition of two numbers=%f ",d);
+        break;
+        
+        case '-':
+        d=0;
+        d=a-b;
+        printf("Subtarction of two numbers=%f",d);
+        break;
+        
+        case '*':
+        d=0;
+        d=a-b;
+        printf("Multiplication of two numbers=%f",d);
+        break;
+        
+        case '/':
+        d=0;
+        d=a-b;
+        printf("Division of two numbers=%f",d);
+        break;
+        
+        default : 
+        printf("You take a wrong operator");
+    }
+    
+    return 0;
+}

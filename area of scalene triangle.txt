@@ -1,0 +1,27 @@
+//C Program to Calculate Area of Scalene Triangle
+
+
+
+#include <stdio.h>
+
+int main() {
+   float a=0.5,b,h,area;
+   
+   printf("Enter the value of base and height ");
+   scanf("%f %f",&b,&h);
+   
+   area=a*b*h;
+   printf("Area of scalene triangle = %f",area);
+
+    return 0;
+}
+
+
+
+
+output:
+
+
+Enter the value of base and height 5
+4
+Area of scalene triangle = 10.000000

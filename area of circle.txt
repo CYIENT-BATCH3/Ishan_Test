@@ -1,0 +1,13 @@
+area of circle
+
+#include<stdio.h>
+int main()
+{
+    int r;
+    float area;
+    const float pi=3.14;
+     
+    scanf("\n%d",&r);
+    area=pi*r*r;
+    printf("area of circle: %f",area);
+}

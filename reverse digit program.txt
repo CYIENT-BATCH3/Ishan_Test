@@ -1,0 +1,39 @@
+reverse 6 digits number
+
+#include <stdio.h>
+
+int main() {
+   int num,temp;
+   num=123456;
+   temp=num;
+   temp=num%10;
+   printf("\%d",temp);
+   
+   num=num/10;
+   temp=num;
+   temp=num%10;
+   printf("%d",temp);
+   
+   num=num/10;
+   temp=num;
+   temp=num%10;
+   printf("%d",temp);
+   
+   num=num/10;
+   temp=num;
+   temp=num%10;
+   printf("%d",temp);
+   
+   num=num/10;
+   temp=num;
+   temp=num%10;
+   printf("\%d",temp);
+   
+   num=num/10;
+   temp=num;
+   temp=num%10;
+   printf("%d",temp);
+   
+   
+    return 0;
+}

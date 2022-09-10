@@ -1,0 +1,30 @@
+LCD program with ENUM
+
+
+#include <stdio.h>
+
+enum lcd {clear=0x01,display=0x08,currosr=0x0E,first_line=0x80,second_line=0xC0};
+
+int main() {
+    enum lcd steps;
+    
+    steps=display;
+     printf("\ndispaly the page %d",steps);
+     
+    steps=currosr;
+     printf("\nblink it----- %d",steps);
+    
+    steps=first_line;
+     printf("\nHello %d",steps);
+    
+    steps=clear;
+    printf("\nclear the first line %d",steps);
+    
+    steps=second_line;
+    printf("\nGood morning %d",steps);
+    
+   
+   
+
+    return 0;
+}

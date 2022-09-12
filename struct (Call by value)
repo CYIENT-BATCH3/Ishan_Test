@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct student  //struct declaration
+{
+    int age;   //struct members
+    char name[10];  //struct members
+};
+void details (struct student record);  //struct as argument
+int main()
+{
+    struct student record;  //declaration of struct variable
+    record.age=25;   //initalisation
+    strcpy(record.name,"Ishan"); //initalisation
+
+    details (record);   //call function
+    return 0;
+
+
+}
+
+void details(struct student record)  //define the function
+{
+    printf("Age of student %d",record.age);    //print age
+    printf("\nname of student %s",record.name);  //print name
+}

@@ -1,0 +1,30 @@
+#include <xc.h>
+
+
+
+#define _XTAL_FREQ 20000000
+
+
+
+void main(){
+    TRISE=0x01;
+    //TRISA=0x01;//setting port A0 is input
+    TRISC=0x00;//setting PORT C0 is output
+    PORTC=0x00;//
+    ADCON0=0xc1;//adc turn on and clock is set
+    ADCON1=0x80;//all pins as analog input
+    
+    unsigned int a;
+    while(1){
+      __delay_ms(2);
+      GO_nDONE =1;
+      while(GO_nDONE);
+      a=(ADRESH<<8)+ADRESL;
+      PORTC=a;
+
+
+
+   }
+    
+    
+}

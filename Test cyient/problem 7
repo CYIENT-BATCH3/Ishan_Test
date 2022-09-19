@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+#define square(x)  x*x //define square formula
+
+int main()   //main function
+
+{
+
+    int num;   //declre int value
+
+    printf("enter the number:");   //print 
+
+    scanf("%d",&num);           //message
+
+    printf("%d",square(num));     //print output
+
+}

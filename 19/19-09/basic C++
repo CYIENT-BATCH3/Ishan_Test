@@ -1,0 +1,9 @@
+#include<iostream>  //header files
+using namespace std;   //for input output purpose
+int main()            //main function
+{
+	int num;            //declare int value
+	cout<<"Enter the number ";    //print enter the number
+	cin>>num;                    //scanf (message)
+	cout<<"The number is " <<num;  //print entered number
+}

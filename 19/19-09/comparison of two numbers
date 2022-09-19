@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num;
+	int a,b;
+	cout<<"Enter the number ";
+	cin>>a>>b;
+	cout <<"a="<<a <<"  b="<<b;
+	if(a>b)
+	{
+		cout<<"\n a is greater than b";
+	}
+	else
+	{
+		cout<<"\n b is grater than a";
+	}
+
+
+}

@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,i=0,num=0;
+	cout<<"Enter the numbers";
+	cin>>num;
+	do{
+		cout<<"\nthe numners are "<<i;
+		i++;
+	}
+	while(i<num);
+
+
+
+}

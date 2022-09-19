@@ -1,0 +1,28 @@
+#include<stdio.h>
+struct data
+{
+char std_name[20];  //declaration of char value
+int std_id;  // declare integer value
+int std_age;   //declare integer value
+};
+
+int main()  //main function
+{
+	setbuf(stdout,NULL);
+struct data s1[5];  //structure variable
+int i;               //declare integer value
+for(i=0;i<5;i++){    //for loop for 5 students
+printf("Enter the student name :");   //print the name
+scanf("%s",s1[i].std_name);          //message 
+printf("\nEnter the stduent id:");  //print id
+scanf("%d",&s1[i].std_id);          //message
+printf("\nEnter the student age:");   //print the age
+scanf("%d",&s1[i].std_age);         //message 
+}
+for(i=0;i<5;i++){                    //for loop for printing
+printf("the name is : %s",s1[i].std_name);
+printf("\nthe student id is : %d",s1[i].std_id);
+printf("\nthe stuent age is : %d",s1[i].std_age);
+
+}
+}

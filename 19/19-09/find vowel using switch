@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;           
+int main()                    //main function
+{
+	char ch;                      //declare char
+	cout<<"Enter the character";  //enter the char
+	cin>>ch;                       //
+
+	switch (ch)   //using switch comapre char
+	{
+	case 'a':
+	case 'e':
+	case 'i':
+	case 'o':
+	case 'u':
+		cout<<"The character is vowvel";   //check the char
+		break;
+	default:cout<<"The char is consonant";
+
+	}
+
+
+}

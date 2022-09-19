@@ -1,0 +1,28 @@
+//WAP to convert the decimal number into binary number
+/*first we take decimal value from user and we convert it into binary with the conversion
+take the LCM of decimal value by 2 until it takes 0.
+take the remainder values and this is binary conversion*/
+
+
+
+
+
+#include<stdio.h>
+int dec_bin(int dec_val)   //define the function
+{
+    int value;
+	for(int i=0;i<=sizeof(value);i++)
+	{
+		value = dec_val %2;        //takes remainder value
+	    dec_val =dec_val /2;       //takes quotient value
+	    printf("%d",value);        //print the value
+}
+}
+
+int main()       //main function
+{
+	int value=0;
+	printf("Enter The Decimal Number");   //enter the decimal value
+	scanf("%d",&value);                    //enter the value from user
+	dec_bin(value);                        //call the function
+  }

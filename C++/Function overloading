@@ -1,0 +1,52 @@
+#include<iostream>
+# define pi 3.14   //define pi value
+using namespace std;
+class lasun      //class define
+{
+public:
+	float circle;  //intitalise class member
+	float rectangle;   //intitalise class member
+	float triangle;     //intitalise class member
+	void area(float a)     //class function with arguments
+		{
+    circle = pi*a*a;
+		cout<<"area of circle is "<<circle<<endl;
+	}
+	void area( )   ////class function with no arguments
+	{
+		int l;
+		int b;
+
+		cin>>l>>b;
+
+		rectangle =l*b;
+		cout<<"area of rectangle value "<<rectangle<<endl;
+
+
+	}
+	void area(double b,double h )    //class function with arguments
+	{
+		triangle =0.5*b*h;
+		cout<<"area of triangle is "<<triangle<<endl;	}
+
+};
+int main()
+{
+	lasun obj;    //declaring class object
+	obj.area(3.0);  //calling function with class object
+
+	obj.area();   //calling function with class object
+	obj.area(3.0,2.0); //calling function with class object
+
+}
+
+
+
+output:
+area of circle is 28.26
+Enter the rectangle value
+4
+2
+area of rectangle value 8
+area of triangle is 3
+

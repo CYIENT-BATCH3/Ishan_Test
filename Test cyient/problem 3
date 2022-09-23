@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+
+    int a[]={20, 2, 10, 6, 52, 31, 0, 45, 79, 40};   //declare array
+
+    int temp,i,j;       //declare int value
+
+    int c=sizeof(a)/sizeof(a[0]);    
+
+    for( j=0;j<c;j++) 
+
+    { 
+
+        printf("\t%d",a[j]);  //print the values
+
+    } 
+
+    for( j=0;j<c;j++)   //loop with interation j
+
+    { 
+
+        for( i=j+1;i<c;i++)   //loop with interation i
+
+        { 
+
+            if(a[j]>a[i])   //compare array of j> array of i
+
+            { 
+
+                int temp=a[j];    //assign array of j to temp variable
+
+                a[j]=a[i];        //assign array of i to a[j]
+
+                a[i]=temp;        //assign temp value to a[i] 
+
+            } 
+
+        } 
+
+    } 
+
+    printf("\n");     //next line
+
+    for(j=0;j<c;j++)    //loop
+
+    { 
+
+        printf("\t%d",a[j]);   //print the values
+
+    } 
+
+ 
+    return 0;
+}

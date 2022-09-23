@@ -1,0 +1,50 @@
+#include <stdio.h> 
+
+int main() 
+
+{ 
+
+    int arr[10]={8,5,7,6,12,45,10,4,9,11};   //declare array
+
+    int *ptr=arr;   //declare array pointer
+
+    int num,temp=0;   //declare int value
+
+    printf("enter number ");   //enter number
+
+    scanf("%d",&num);      //user input
+
+    for(int i=0;i<=10;i++)   //for loop upto 10 numbers
+
+    { 
+
+        if(ptr[i]==num)     //if condition
+
+        { 
+
+            temp=1;   //check temp value
+
+            printf(" %d :arr[%d]",num,i); 
+            printf("\n the number is in array arr[%d]",i);
+
+            break; 
+
+        } 
+
+         
+
+    } 
+
+    if(temp==0)     //check temp value
+ 
+    { 
+
+        printf(" %d not in array",num);  //print
+
+    } 
+
+     
+
+    return 0; 
+
+} 

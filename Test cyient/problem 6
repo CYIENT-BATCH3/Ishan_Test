@@ -1,0 +1,32 @@
+#include <stdio.h>
+int add(int ,int);    //declare addition function
+int sub(int ,int);    //declare subtract function
+int sum , minus;
+int main() {
+    int a;          //declare integer variable
+    int *p;         //declare pointer variable
+    int b;         ////declare integer variable
+    int *q;         //declare pointer variable
+    int temp1,temp2;
+    
+    
+    printf("Enter the value of a and b");  //print a and b value
+    scanf("%d %d",&a,&b);                 //enter user input value
+    p=add;                       //call function       
+    printf("%d",p);
+    
+    
+    
+    
+    return 0;
+}
+
+int add(int a ,int b)        //defining function
+{
+    sum =a+b;
+}
+
+int sub(int a,int b)        //defining function
+{
+    minus = a-b;
+}

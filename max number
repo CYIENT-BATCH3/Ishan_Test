@@ -1,0 +1,21 @@
+// check the 3 numbers in which which number is maximum
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+    printf("Enter the three numbers ");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    {
+        printf("\na is grater than b and c");
+    }
+    else if(b>a&&b>c)
+    {
+        printf("\nb is grater than a and c");
+    }
+    else
+    {
+        printf("\nc is greater than b and a");
+    }
+    return 0;
+}

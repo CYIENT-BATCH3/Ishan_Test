@@ -1,0 +1,30 @@
+// Accept number from users perform addition of all add number from 1 to n and check the addition is even or odd 
+#include <stdio.h>
+
+int main() {
+   int a,b,i,num=0;
+   printf("Enter the range ");
+   scanf("%d %d",&a,&b);
+   printf("The range is in between %d to %d ",a,b);
+    for(int i=a;i<=b;i++)
+    {
+       // printf("\n%d",i);
+        if(i%2!=0)
+    {
+        printf("\nOdd numbers are %d",i);
+        num=num+i;
+      printf("\n%d",num);
+   
+      
+     }
+      
+    }     
+   
+       
+       
+           
+                
+   
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+// Accept number from user perform add of all distinct digit from given number and check add is odd or even
+#include <stdio.h>
+
+int main() {
+   int n,a,b=0;
+   printf("Enter the number");
+   scanf("%d",&n);
+   while(n>0)
+   {
+      a=n%10;
+      b=b+a;
+      n=n/10;
+   }
+   if(b%2==0)
+   {
+       printf("The addition is even");
+   }
+   else
+   {
+       printf("The addition is odd");
+   }
+    return 0;
+}

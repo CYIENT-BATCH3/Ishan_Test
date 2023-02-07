@@ -1,0 +1,42 @@
+// WAP for temperature using switch condition
+#include <stdio.h>
+
+int main() {
+   int x;
+   printf("Enter the temperature ");
+   scanf("%d",&x);
+   switch(x)
+   {
+       case 50:
+       printf("\n very hot");
+       break;
+       
+       case 40:
+       printf("\nHot");
+       break;
+       
+       case 30:
+       printf("\ncold");
+       break;
+       
+       case 20:
+       printf("\nVery cold");
+       break;
+       
+       case 10:
+       printf("\nvery very cold");
+       break;
+       
+       default:
+       printf("\nEnter invalid temperature");
+       break;
+       
+   }
+    return 0;
+}
+
+
+outpt:
+/tmp/bC82ZBLU3J.o
+Enter the temperature 50
+very hot

@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+   double sales=95000;
+   cout<<"sales=Rs"<<sales<<endl;
+   
+   const double stateTax=0.04;
+   double StateTax=sales*stateTax;
+   cout<<"State Tax=Rs"<<StateTax<<endl;
+   
+   const double countryTax=0.02;
+   double Ct=StateTax*countryTax;
+   cout<<"Country tax= Rs"<<Ct<<endl;
+   
+   double TotalTax=StateTax+Ct;
+   cout<<TotalTax;
+    return 0;
+}
+
+
+output=
+/tmp/KK4rX1OdKj.o
+sales=Rs95000
+State Tax=Rs3800
+Country tax= Rs76
+3876
